@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Responsive Navigation</title>
+</head>
+
+<body>
+
+    <div class="navmenu" id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="index.html">About Us</a>
+        <a href="index.html">Contact</a>
+        <a class="icon" onclick="SportsBarMenu()"><i class="Bar-menu"></i>
+        </a>
+    </div>
+<h2 class="title">Responsive Navigation-SportsBarMenu</h2>
+         <p> Queens Sportsbar is located right in the center of Trelleborg and has room for 250 diners, 
+
+          almost 150 of which are outside on our huge wooden deck. 
+          We offer top quality hamburgers, 
+          stone oven baked Neapolitan sourdough pizzas...</p>
+
+
+    <script>
+        function SportsBarMenu() {
+            let Sportsbar = document.getElementById("nav-menu");
+            if (SportsBar.className === "navmenu") {
+                Sportsbar.className += " responsive";
+            } else {
+                Sportsbar.className = "navmenu";
+            }
+        }
+    </script>
+</body>
+
+</html>
