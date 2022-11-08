@@ -40,7 +40,6 @@ body {
     .navmenu a:not(:first-child) {
         display: none;
     }
-
     .navmenu a.icon {
         float: right;
         display: block;
@@ -50,6 +49,7 @@ body {
 @media screen and (max-width: 600px) {
     .navmenu.responsive {
         position: relative;
+        /* display: none; */
     }
 
     .navmenu.responsive .icon {
@@ -67,5 +67,8 @@ body {
 @media screen and (max-width: 600px){
     .title{
         font-size: 30px;
+    }
+    .navmenu .icon {
+        display: block;
     }
 }
